@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family World Cup 2026 · Bracket Pool</title>
+  <meta name="description" content="Our family's FIFA World Cup 2026 prediction pool — a live knockout bracket with flags, owners and a spicy bilingual headline." />
+
+  <!-- Fonts: Saira Condensed (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#bracket">Skip to bracket</a>
+
+  <!-- Headline banner -->
+  <header class="banner" id="banner">
+    <div class="banner__inner">
+      <div class="banner__brand">
+        <span class="banner__badge">WC 2026</span>
+        <span class="banner__title">Family Bracket Pool</span>
+      </div>
+
+      <div class="headline" id="headline" aria-live="polite">
+        <p class="headline__primary" id="headline-primary">Loading the latest drama…</p>
+        <p class="headline__secondary" id="headline-secondary"></p>
+        <p class="headline__meta">
+          <span id="headline-updated" class="headline__updated"></span>
+        </p>
+      </div>
+
+      <div class="lang-toggle" role="group" aria-label="Headline language">
+        <button type="button" class="lang-toggle__btn is-active" data-lang="en" id="lang-en">EN</button>
+        <button type="button" class="lang-toggle__btn" data-lang="bg" id="lang-bg">БГ</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Standings strip -->
+    <section class="standings" id="standings" aria-label="Owner standings">
+      <h2 class="standings__title">Who's still in it</h2>
+      <div class="standings__grid" id="standings-grid"></div>
+    </section>
+
+    <!-- Bracket -->
+    <section class="bracket-wrap" aria-label="Knockout bracket">
+      <div class="bracket-scroll" id="bracket-scroll">
+        <svg class="connectors" id="connectors" aria-hidden="true"></svg>
+        <div class="bracket" id="bracket"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Flags by <a href="https://flagcdn.com" rel="noopener">flagcdn</a>. Auto-updates as matches finish.
+       The bracket is fixed — no redraws. <span class="site-footer__champ" id="footer-champ"></span></p>
+  </footer>
+
+  <template id="match-template">
+    <div class="match" tabindex="0">
+      <div class="match__head">
+        <span class="match__round"></span>
+        <span class="match__venue"></span>
+      </div>
+      <div class="match__teams"></div>
+      <div class="match__foot"></div>
+    </div>
+  </template>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

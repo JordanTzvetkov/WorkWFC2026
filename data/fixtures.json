@@ -1,0 +1,295 @@
+{
+  "tournament": "FIFA World Cup 2026",
+  "rounds": [
+    { "key": "R32",   "label": "Round of 32" },
+    { "key": "R16",   "label": "Round of 16" },
+    { "key": "QF",    "label": "Quarter-finals" },
+    { "key": "SF",    "label": "Semi-finals" },
+    { "key": "FINAL", "label": "Final" }
+  ],
+  "matches": [
+    {
+      "id": "R32-1",
+      "round": "R32",
+      "kickoff_utc": "2026-06-28T19:00:00Z",
+      "venue": "Inglewood",
+      "home": { "team": "Canada", "code": "ca", "owner": "Aleks" },
+      "away": { "team": "South Africa", "code": "za", "owner": "Henna" },
+      "feeds_into": "R16-1"
+    },
+    {
+      "id": "R32-2",
+      "round": "R32",
+      "kickoff_utc": "2026-06-29T17:00:00Z",
+      "venue": "Houston",
+      "home": { "team": "Brazil", "code": "br", "owner": "Jordan" },
+      "away": { "team": "Japan", "code": "jp", "owner": "Miro" },
+      "feeds_into": "R16-3"
+    },
+    {
+      "id": "R32-3",
+      "round": "R32",
+      "kickoff_utc": "2026-06-29T20:30:00Z",
+      "venue": "Foxborough",
+      "home": { "team": "Germany", "code": "de", "owner": "Prem" },
+      "away": { "team": "Paraguay", "code": "py", "owner": "Grandad" },
+      "feeds_into": "R16-2"
+    },
+    {
+      "id": "R32-4",
+      "round": "R32",
+      "kickoff_utc": "2026-06-30T01:00:00Z",
+      "venue": "Monterrey",
+      "home": { "team": "Netherlands", "code": "nl", "owner": "Nila" },
+      "away": { "team": "Morocco", "code": "ma", "owner": "Aleks" },
+      "feeds_into": "R16-1"
+    },
+    {
+      "id": "R32-5",
+      "round": "R32",
+      "kickoff_utc": "2026-06-30T17:00:00Z",
+      "venue": "Arlington",
+      "home": { "team": "Ivory Coast", "code": "ci", "owner": "Ash" },
+      "away": { "team": "Norway", "code": "no", "owner": "Miro" },
+      "feeds_into": "R16-3"
+    },
+    {
+      "id": "R32-6",
+      "round": "R32",
+      "kickoff_utc": "2026-06-30T21:00:00Z",
+      "venue": "East Rutherford",
+      "home": { "team": "France", "code": "fr", "owner": "Jayna" },
+      "away": { "team": "Sweden", "code": "se", "owner": "Deyan" },
+      "feeds_into": "R16-2"
+    },
+    {
+      "id": "R32-7",
+      "round": "R32",
+      "kickoff_utc": "2026-07-01T01:00:00Z",
+      "venue": "Mexico City",
+      "home": { "team": "Mexico", "code": "mx", "owner": "Grandad" },
+      "away": { "team": "Ecuador", "code": "ec", "owner": "Prem" },
+      "feeds_into": "R16-4"
+    },
+    {
+      "id": "R32-8",
+      "round": "R32",
+      "kickoff_utc": "2026-07-01T16:00:00Z",
+      "venue": "Atlanta",
+      "home": { "team": "England", "code": "gb-eng", "owner": "Grandad" },
+      "away": { "team": "DR Congo", "code": "cd", "owner": "Prem" },
+      "feeds_into": "R16-4"
+    },
+    {
+      "id": "R32-9",
+      "round": "R32",
+      "kickoff_utc": "2026-07-01T20:00:00Z",
+      "venue": "Seattle",
+      "home": { "team": "Belgium", "code": "be", "owner": "Ash" },
+      "away": { "team": "Senegal", "code": "sn", "owner": "Aleks" },
+      "feeds_into": "R16-5"
+    },
+    {
+      "id": "R32-10",
+      "round": "R32",
+      "kickoff_utc": "2026-07-02T00:00:00Z",
+      "venue": "Santa Clara",
+      "home": { "team": "USA", "code": "us", "owner": "Jordan" },
+      "away": { "team": "Bosnia & Herz.", "code": "ba", "owner": "Deyan" },
+      "feeds_into": "R16-5"
+    },
+    {
+      "id": "R32-11",
+      "round": "R32",
+      "kickoff_utc": "2026-07-02T19:00:00Z",
+      "venue": "Inglewood",
+      "home": { "team": "Spain", "code": "es", "owner": "Petya" },
+      "away": { "team": "Austria", "code": "at", "owner": "Grandma" },
+      "feeds_into": "R16-6"
+    },
+    {
+      "id": "R32-12",
+      "round": "R32",
+      "kickoff_utc": "2026-07-03T03:00:00Z",
+      "venue": "Vancouver",
+      "home": { "team": "Switzerland", "code": "ch", "owner": "Nila" },
+      "away": { "team": "Algeria", "code": "dz", "owner": "Petya" },
+      "feeds_into": "R16-7"
+    },
+    {
+      "id": "R32-13",
+      "round": "R32",
+      "kickoff_utc": "2026-07-02T23:00:00Z",
+      "venue": "Toronto",
+      "home": { "team": "Portugal", "code": "pt", "owner": "Henna" },
+      "away": { "team": "Croatia", "code": "hr", "owner": "Petya" },
+      "feeds_into": "R16-6"
+    },
+    {
+      "id": "R32-14",
+      "round": "R32",
+      "kickoff_utc": "2026-07-03T18:00:00Z",
+      "venue": "Arlington",
+      "home": { "team": "Australia", "code": "au", "owner": "Henna" },
+      "away": { "team": "Egypt", "code": "eg", "owner": "Jayna" },
+      "feeds_into": "R16-8"
+    },
+    {
+      "id": "R32-15",
+      "round": "R32",
+      "kickoff_utc": "2026-07-03T22:00:00Z",
+      "venue": "Miami Gardens",
+      "home": { "team": "Argentina", "code": "ar", "owner": "Grandma" },
+      "away": { "team": "Cape Verde", "code": "cv", "owner": "Grandad" },
+      "feeds_into": "R16-8"
+    },
+    {
+      "id": "R32-16",
+      "round": "R32",
+      "kickoff_utc": "2026-07-04T01:30:00Z",
+      "venue": "Kansas City",
+      "home": { "team": "Colombia", "code": "co", "owner": "Deyan" },
+      "away": { "team": "Ghana", "code": "gh", "owner": "Nila" },
+      "feeds_into": "R16-7"
+    },
+
+    {
+      "id": "R16-1",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Philadelphia",
+      "source_home": "R32-1",
+      "source_away": "R32-4",
+      "feeds_into": "QF-1"
+    },
+    {
+      "id": "R16-2",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Philadelphia",
+      "source_home": "R32-3",
+      "source_away": "R32-6",
+      "feeds_into": "QF-1"
+    },
+    {
+      "id": "R16-3",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "East Rutherford",
+      "source_home": "R32-2",
+      "source_away": "R32-5",
+      "feeds_into": "QF-2"
+    },
+    {
+      "id": "R16-4",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Mexico City",
+      "source_home": "R32-7",
+      "source_away": "R32-8",
+      "feeds_into": "QF-2"
+    },
+    {
+      "id": "R16-5",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Arlington",
+      "source_home": "R32-10",
+      "source_away": "R32-9",
+      "feeds_into": "QF-3"
+    },
+    {
+      "id": "R16-6",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Seattle",
+      "source_home": "R32-11",
+      "source_away": "R32-13",
+      "feeds_into": "QF-3"
+    },
+    {
+      "id": "R16-7",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Atlanta",
+      "source_home": "R32-12",
+      "source_away": "R32-16",
+      "feeds_into": "QF-4"
+    },
+    {
+      "id": "R16-8",
+      "round": "R16",
+      "kickoff_utc": null,
+      "venue": "Vancouver",
+      "source_home": "R32-15",
+      "source_away": "R32-14",
+      "feeds_into": "QF-4"
+    },
+
+    {
+      "id": "QF-1",
+      "round": "QF",
+      "kickoff_utc": null,
+      "venue": "Foxborough",
+      "source_home": "R16-1",
+      "source_away": "R16-2",
+      "feeds_into": "SF-1"
+    },
+    {
+      "id": "QF-2",
+      "round": "QF",
+      "kickoff_utc": null,
+      "venue": "Inglewood",
+      "source_home": "R16-3",
+      "source_away": "R16-4",
+      "feeds_into": "SF-1"
+    },
+    {
+      "id": "QF-3",
+      "round": "QF",
+      "kickoff_utc": null,
+      "venue": "Miami Gardens",
+      "source_home": "R16-5",
+      "source_away": "R16-6",
+      "feeds_into": "SF-2"
+    },
+    {
+      "id": "QF-4",
+      "round": "QF",
+      "kickoff_utc": null,
+      "venue": "Kansas City",
+      "source_home": "R16-7",
+      "source_away": "R16-8",
+      "feeds_into": "SF-2"
+    },
+
+    {
+      "id": "SF-1",
+      "round": "SF",
+      "kickoff_utc": null,
+      "venue": "Arlington",
+      "source_home": "QF-1",
+      "source_away": "QF-2",
+      "feeds_into": "FINAL"
+    },
+    {
+      "id": "SF-2",
+      "round": "SF",
+      "kickoff_utc": null,
+      "venue": "Atlanta",
+      "source_home": "QF-3",
+      "source_away": "QF-4",
+      "feeds_into": "FINAL"
+    },
+
+    {
+      "id": "FINAL",
+      "round": "FINAL",
+      "kickoff_utc": null,
+      "venue": "East Rutherford",
+      "source_home": "SF-1",
+      "source_away": "SF-2",
+      "feeds_into": null
+    }
+  ]
+}

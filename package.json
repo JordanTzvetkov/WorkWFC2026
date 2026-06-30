@@ -1,0 +1,13 @@
+{
+  "name": "worldcup-bracket-pool",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-updating FIFA World Cup 2026 family bracket pool (static site + scheduled updater).",
+  "scripts": {
+    "update": "node scripts/update.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

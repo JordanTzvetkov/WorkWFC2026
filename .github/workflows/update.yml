@@ -1,0 +1,32 @@
+name: Update bracket
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 min (UTC). The "3h after kickoff" rule lives in the script.
+  workflow_dispatch: {}       # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bracket-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/update.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Commit changes if any
+        run: |
+          git config user.name  "bracket-bot"
+          git config user.email "bracket-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "chore: update results [skip ci]"
+          git push

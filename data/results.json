@@ -1,0 +1,6 @@
+{
+  "R32-1": { "home": 1, "away": 0, "winner": "home", "pens": null, "final": true },
+  "R32-2": { "home": 2, "away": 1, "winner": "home", "pens": null, "final": true },
+  "R32-3": { "home": 1, "away": 1, "winner": "away", "pens": { "home": 3, "away": 4 }, "final": true },
+  "R32-4": { "home": 1, "away": 1, "winner": "away", "pens": { "home": 2, "away": 3 }, "final": true }
+}

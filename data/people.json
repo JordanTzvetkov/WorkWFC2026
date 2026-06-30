@@ -1,0 +1,14 @@
+{
+  "Aleks":   { "img": "aleks.jpg",   "color": "#C0392B" },
+  "Deyan":   { "img": "deyan.jpg",   "color": "#2980B9" },
+  "Jayna":   { "img": "jayna.jpg",   "color": "#8E44AD" },
+  "Ash":     { "img": "ash.jpg",     "color": "#16A085" },
+  "Henna":   { "img": "henna.jpg",   "color": "#D35400" },
+  "Jordan":  { "img": "jordan.jpg",  "color": "#27AE60" },
+  "Miro":    { "img": "miro.jpg",    "color": "#2C3E50" },
+  "Petya":   { "img": "petya.jpg",   "color": "#C0399B" },
+  "Prem":    { "img": "prem.jpg",    "color": "#E67E22" },
+  "Nila":    { "img": "nila.jpg",    "color": "#1ABC9C" },
+  "Grandma": { "img": "grandma.jpg", "color": "#A93226" },
+  "Grandad": { "img": "grandad.jpg", "color": "#1F618D" }
+}
