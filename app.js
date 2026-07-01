@@ -20,7 +20,6 @@
     results: {},
     headline: { current: null, history: [] },
     byId: {},
-    lang: localStorage.getItem("wc26-lang") === "bg" ? "bg" : "en",
   };
 
   /* ---------------- data load ---------------- */
@@ -48,7 +47,6 @@
       renderHeadline();
       renderStandings();
       renderBracket();
-      wireLangToggle();
       scheduleConnectors();
     } catch (err) {
       console.error(err);
@@ -387,17 +385,29 @@
       if (loser) out.add(loser.team);
     }
 
-    const owners = order.filter((o) => byOwner[o]);
+    // Group-stage casualties: teams that never reached the R32 bracket, declared
+    // per owner in people.json as `out_groups`. Absent on the family branch, so
+    // this whole strand is a no-op there.
+    const groupOut = (owner) => {
+      const g = (state.people[owner] || {}).out_groups;
+      return Array.isArray(g) ? g : [];
+    };
+
+    // Owners with at least one bracket team OR a group-stage team (so someone
+    // whose teams both fell in the groups still gets a card).
+    const owners = order.filter((o) => (byOwner[o] && byOwner[o].length) || groupOut(o).length);
     // Sort by teams still alive (desc), then name.
     owners.sort((a, b) => {
-      const av = byOwner[a].filter((t) => !out.has(t.team)).length;
-      const bv = byOwner[b].filter((t) => !out.has(t.team)).length;
+      const av = (byOwner[a] || []).filter((t) => !out.has(t.team)).length;
+      const bv = (byOwner[b] || []).filter((t) => !out.has(t.team)).length;
       return bv - av || a.localeCompare(b);
     });
 
     for (const owner of owners) {
-      const teams = byOwner[owner];
+      const teams = byOwner[owner] || [];
+      const gout = groupOut(owner);
       const aliveN = teams.filter((t) => !out.has(t.team)).length;
+      const outN = teams.length - aliveN + gout.length;
 
       const card = el("div", "person");
       card.appendChild(avatarEl(owner));
@@ -421,8 +431,22 @@
           chips.appendChild(chip);
         });
 
+      // Group-stage casualties always sit last, tagged so they read differently
+      // from a team knocked out inside the bracket.
+      gout.forEach((t) => {
+        const chip = el("span", "chip chip--out chip--group");
+        chip.appendChild(flagEl(t.code, t.team));
+        const tn = el("span");
+        tn.textContent = t.team;
+        chip.appendChild(tn);
+        const tag = el("span", "chip__tag");
+        tag.textContent = "groups";
+        chip.appendChild(tag);
+        chips.appendChild(chip);
+      });
+
       const tally = el("div", "person__tally");
-      tally.innerHTML = `<b>${aliveN}</b> alive · ${teams.length - aliveN} out`;
+      tally.innerHTML = `<b>${aliveN}</b> alive · ${outN} out`;
 
       body.append(name, chips, tally);
       card.appendChild(body);
@@ -434,39 +458,20 @@
   function renderHeadline() {
     const c = state.headline.current;
     const primaryEl = $("#headline-primary");
-    const secondaryEl = $("#headline-secondary");
     const updatedEl = $("#headline-updated");
 
-    if (!c || (!c.en && !c.bg)) {
+    if (!c || !c.en) {
       primaryEl.textContent = "No results yet — first whistle awaits.";
-      secondaryEl.textContent = "";
-      updatedEl.textContent = "";
+      if (updatedEl) updatedEl.textContent = "";
       return;
     }
 
-    const other = state.lang === "en" ? "bg" : "en";
-    primaryEl.innerHTML = highlightNames(c[state.lang] || c[other] || "", state.lang);
-    secondaryEl.textContent = c[other] || "";
-    updatedEl.textContent = c.generated_at ? "Updated " + relTime(c.generated_at) : "";
-
-    document.querySelectorAll(".lang-toggle__btn").forEach((b) =>
-      b.classList.toggle("is-active", b.dataset.lang === state.lang)
-    );
+    primaryEl.innerHTML = highlightNames(c.en);
+    if (updatedEl) updatedEl.textContent = c.generated_at ? "Updated " + relTime(c.generated_at) : "";
   }
 
-  function wireLangToggle() {
-    document.querySelectorAll(".lang-toggle__btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        state.lang = btn.dataset.lang;
-        localStorage.setItem("wc26-lang", state.lang);
-        renderHeadline();
-      });
-    });
-  }
-
-  function highlightNames(text, lang) {
+  function highlightNames(text) {
     const safe = escapeHtml(text);
-    if (lang !== "en") return safe; // names are transliterated in BG
     const names = Object.keys(state.people).sort((a, b) => b.length - a.length);
     if (!names.length) return safe;
     const re = new RegExp("\\b(" + names.map(escapeReg).join("|") + ")\\b", "g");

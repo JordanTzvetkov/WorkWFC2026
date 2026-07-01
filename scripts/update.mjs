@@ -154,13 +154,12 @@ async function main() {
 
   // 8. Update headline.json (move old current → history, cap 20).
   const headline = JSON.parse(await readFile(HEADLINE, "utf8"));
-  if (parsed.headline && (parsed.headline.en || parsed.headline.bg)) {
+  if (parsed.headline && parsed.headline.en) {
     if (!Array.isArray(headline.history)) headline.history = [];
     if (headline.current) headline.history.unshift(headline.current);
     headline.history = headline.history.slice(0, 20);
     headline.current = {
       en: String(parsed.headline.en || ""),
-      bg: String(parsed.headline.bg || ""),
       generated_at: new Date(now).toISOString(),
       covers: resolved,
     };
@@ -183,7 +182,7 @@ ${dueList}
 
 For each match, determine the final score, whether it went to a penalty shootout (and the shootout score), and which side won (home or away as labelled above).
 
-Then write ONE punchy, playful, family-friendly headline that summarises ONLY these results, naming the OWNERS (not just the countries) — e.g. frame it as one person's team knocking out another person's team. Make it spicy and fun but kind. Then translate that same headline into Bulgarian.
+Then write ONE punchy, playful, office-friendly headline in English that summarises ONLY these results, naming the OWNERS (not just the countries) — e.g. frame it as one person's team knocking out another person's team. Make it spicy and fun but kind.
 
 Respond with ONLY a single JSON code block, no other text:
 \`\`\`json
@@ -191,7 +190,7 @@ Respond with ONLY a single JSON code block, no other text:
   "results": [
     { "id": "R32-6", "home": 0, "away": 0, "winner": "home", "pens": null }
   ],
-  "headline": { "en": "<one or two sentences>", "bg": "<Bulgarian translation>" }
+  "headline": { "en": "<one or two sentences>" }
 }
 \`\`\``;
 }

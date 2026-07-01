@@ -13,8 +13,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-28T19:00:00Z",
       "venue": "Inglewood",
-      "home": { "team": "Canada", "code": "ca", "owner": "Aleks" },
-      "away": { "team": "South Africa", "code": "za", "owner": "Henna" },
+      "home": { "team": "Canada", "code": "ca", "owner": "Alex" },
+      "away": { "team": "South Africa", "code": "za", "owner": "Isaac" },
       "feeds_into": "R16-1"
     },
     {
@@ -22,8 +22,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-29T17:00:00Z",
       "venue": "Houston",
-      "home": { "team": "Brazil", "code": "br", "owner": "Jordan" },
-      "away": { "team": "Japan", "code": "jp", "owner": "Miro" },
+      "home": { "team": "Brazil", "code": "br", "owner": "Joe" },
+      "away": { "team": "Japan", "code": "jp", "owner": "Emmy" },
       "feeds_into": "R16-3"
     },
     {
@@ -31,8 +31,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-29T20:30:00Z",
       "venue": "Foxborough",
-      "home": { "team": "Germany", "code": "de", "owner": "Prem" },
-      "away": { "team": "Paraguay", "code": "py", "owner": "Grandad" },
+      "home": { "team": "Germany", "code": "de", "owner": "Evie" },
+      "away": { "team": "Paraguay", "code": "py", "owner": "Martin" },
       "feeds_into": "R16-2"
     },
     {
@@ -40,8 +40,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-30T01:00:00Z",
       "venue": "Monterrey",
-      "home": { "team": "Netherlands", "code": "nl", "owner": "Nila" },
-      "away": { "team": "Morocco", "code": "ma", "owner": "Aleks" },
+      "home": { "team": "Netherlands", "code": "nl", "owner": "Laura" },
+      "away": { "team": "Morocco", "code": "ma", "owner": "Kate" },
       "feeds_into": "R16-1"
     },
     {
@@ -49,8 +49,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-30T17:00:00Z",
       "venue": "Arlington",
-      "home": { "team": "Ivory Coast", "code": "ci", "owner": "Ash" },
-      "away": { "team": "Norway", "code": "no", "owner": "Miro" },
+      "home": { "team": "Ivory Coast", "code": "ci", "owner": "Alex" },
+      "away": { "team": "Norway", "code": "no", "owner": "John" },
       "feeds_into": "R16-3"
     },
     {
@@ -58,8 +58,8 @@
       "round": "R32",
       "kickoff_utc": "2026-06-30T21:00:00Z",
       "venue": "East Rutherford",
-      "home": { "team": "France", "code": "fr", "owner": "Jayna" },
-      "away": { "team": "Sweden", "code": "se", "owner": "Deyan" },
+      "home": { "team": "France", "code": "fr", "owner": "Tarang" },
+      "away": { "team": "Sweden", "code": "se", "owner": "James" },
       "feeds_into": "R16-2"
     },
     {
@@ -67,8 +67,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-01T01:00:00Z",
       "venue": "Mexico City",
-      "home": { "team": "Mexico", "code": "mx", "owner": "Grandad" },
-      "away": { "team": "Ecuador", "code": "ec", "owner": "Prem" },
+      "home": { "team": "Mexico", "code": "mx", "owner": "Ben WL" },
+      "away": { "team": "Ecuador", "code": "ec", "owner": "Chris" },
       "feeds_into": "R16-4"
     },
     {
@@ -76,8 +76,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-01T16:00:00Z",
       "venue": "Atlanta",
-      "home": { "team": "England", "code": "gb-eng", "owner": "Grandad" },
-      "away": { "team": "DR Congo", "code": "cd", "owner": "Prem" },
+      "home": { "team": "England", "code": "gb-eng", "owner": "Baz" },
+      "away": { "team": "DR Congo", "code": "cd", "owner": "Emmy" },
       "feeds_into": "R16-4"
     },
     {
@@ -85,8 +85,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-01T20:00:00Z",
       "venue": "Seattle",
-      "home": { "team": "Belgium", "code": "be", "owner": "Ash" },
-      "away": { "team": "Senegal", "code": "sn", "owner": "Aleks" },
+      "home": { "team": "Belgium", "code": "be", "owner": "Ben B" },
+      "away": { "team": "Senegal", "code": "sn", "owner": "Megan" },
       "feeds_into": "R16-5"
     },
     {
@@ -94,8 +94,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-02T00:00:00Z",
       "venue": "Santa Clara",
-      "home": { "team": "USA", "code": "us", "owner": "Jordan" },
-      "away": { "team": "Bosnia & Herz.", "code": "ba", "owner": "Deyan" },
+      "home": { "team": "USA", "code": "us", "owner": "Michael" },
+      "away": { "team": "Bosnia & Herz.", "code": "ba", "owner": "Michael" },
       "feeds_into": "R16-5"
     },
     {
@@ -103,8 +103,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-02T19:00:00Z",
       "venue": "Inglewood",
-      "home": { "team": "Spain", "code": "es", "owner": "Petya" },
-      "away": { "team": "Austria", "code": "at", "owner": "Grandma" },
+      "home": { "team": "Spain", "code": "es", "owner": "Jordan" },
+      "away": { "team": "Austria", "code": "at", "owner": "Eleanor" },
       "feeds_into": "R16-6"
     },
     {
@@ -112,8 +112,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-03T03:00:00Z",
       "venue": "Vancouver",
-      "home": { "team": "Switzerland", "code": "ch", "owner": "Nila" },
-      "away": { "team": "Algeria", "code": "dz", "owner": "Petya" },
+      "home": { "team": "Switzerland", "code": "ch", "owner": "Andy" },
+      "away": { "team": "Algeria", "code": "dz", "owner": "Baz" },
       "feeds_into": "R16-7"
     },
     {
@@ -121,8 +121,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-02T23:00:00Z",
       "venue": "Toronto",
-      "home": { "team": "Portugal", "code": "pt", "owner": "Henna" },
-      "away": { "team": "Croatia", "code": "hr", "owner": "Petya" },
+      "home": { "team": "Portugal", "code": "pt", "owner": "Martin" },
+      "away": { "team": "Croatia", "code": "hr", "owner": "Anthony" },
       "feeds_into": "R16-6"
     },
     {
@@ -130,8 +130,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-03T18:00:00Z",
       "venue": "Arlington",
-      "home": { "team": "Australia", "code": "au", "owner": "Henna" },
-      "away": { "team": "Egypt", "code": "eg", "owner": "Jayna" },
+      "home": { "team": "Australia", "code": "au", "owner": "Ben WL" },
+      "away": { "team": "Egypt", "code": "eg", "owner": "Joe" },
       "feeds_into": "R16-8"
     },
     {
@@ -139,8 +139,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-03T22:00:00Z",
       "venue": "Miami Gardens",
-      "home": { "team": "Argentina", "code": "ar", "owner": "Grandma" },
-      "away": { "team": "Cape Verde", "code": "cv", "owner": "Grandad" },
+      "home": { "team": "Argentina", "code": "ar", "owner": "Beccy" },
+      "away": { "team": "Cape Verde", "code": "cv", "owner": "Laura" },
       "feeds_into": "R16-8"
     },
     {
@@ -148,8 +148,8 @@
       "round": "R32",
       "kickoff_utc": "2026-07-04T01:30:00Z",
       "venue": "Kansas City",
-      "home": { "team": "Colombia", "code": "co", "owner": "Deyan" },
-      "away": { "team": "Ghana", "code": "gh", "owner": "Nila" },
+      "home": { "team": "Colombia", "code": "co", "owner": "Jen" },
+      "away": { "team": "Ghana", "code": "gh", "owner": "James" },
       "feeds_into": "R16-7"
     },
 
