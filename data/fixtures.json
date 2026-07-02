@@ -178,7 +178,7 @@
       "venue": "East Rutherford",
       "source_home": "R32-2",
       "source_away": "R32-5",
-      "feeds_into": "QF-2"
+      "feeds_into": "QF-3"
     },
     {
       "id": "R16-4",
@@ -187,7 +187,7 @@
       "venue": "Mexico City",
       "source_home": "R32-7",
       "source_away": "R32-8",
-      "feeds_into": "QF-2"
+      "feeds_into": "QF-3"
     },
     {
       "id": "R16-5",
@@ -196,7 +196,7 @@
       "venue": "Arlington",
       "source_home": "R32-10",
       "source_away": "R32-9",
-      "feeds_into": "QF-3"
+      "feeds_into": "QF-2"
     },
     {
       "id": "R16-6",
@@ -205,7 +205,7 @@
       "venue": "Seattle",
       "source_home": "R32-11",
       "source_away": "R32-13",
-      "feeds_into": "QF-3"
+      "feeds_into": "QF-2"
     },
     {
       "id": "R16-7",
@@ -240,8 +240,8 @@
       "round": "QF",
       "kickoff_utc": null,
       "venue": "Inglewood",
-      "source_home": "R16-3",
-      "source_away": "R16-4",
+      "source_home": "R16-5",
+      "source_away": "R16-6",
       "feeds_into": "SF-1"
     },
     {
@@ -249,8 +249,8 @@
       "round": "QF",
       "kickoff_utc": null,
       "venue": "Miami Gardens",
-      "source_home": "R16-5",
-      "source_away": "R16-6",
+      "source_home": "R16-3",
+      "source_away": "R16-4",
       "feeds_into": "SF-2"
     },
     {

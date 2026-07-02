@@ -227,6 +227,8 @@
       const k = el("span", "pill");
       k.textContent = formatKickoff(match.kickoff_utc);
       foot.appendChild(k);
+    } else if (parts.home && parts.away) {
+      foot.textContent = "Kick-off time TBC";
     } else {
       foot.textContent = "Awaiting teams";
     }
