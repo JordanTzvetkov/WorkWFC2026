@@ -35,10 +35,23 @@
   </header>
 
   <main>
+    <!-- Running prize pot -->
+    <section class="pot" id="pot" aria-label="Prize pot">
+      <h2 class="standings__title">Running prize pot <span class="pot__total" id="pot-total"></span></h2>
+      <div class="pot__grid" id="pot-grid"></div>
+    </section>
+
     <!-- Standings strip -->
     <section class="standings" id="standings" aria-label="Owner standings">
       <h2 class="standings__title">Who's still in it</h2>
       <div class="standings__grid" id="standings-grid"></div>
+      <details class="graveyard" id="graveyard">
+        <summary class="graveyard__summary">
+          <span>⚰️ Sweepstake Graveyard</span>
+          <span class="graveyard__count" id="graveyard-count"></span>
+        </summary>
+        <div class="standings__grid graveyard__grid" id="graveyard-grid"></div>
+      </details>
     </section>
 
     <!-- Bracket -->

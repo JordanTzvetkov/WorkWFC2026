@@ -219,6 +219,102 @@ main { max-width: 1280px; margin: 0 auto; padding: clamp(18px, 3vw, 30px) clamp(
 .person__tally { font-size: 11px; color: var(--muted-2); margin-top: 6px; font-weight: 600; }
 .person__tally b { color: var(--cyan); }
 
+/* ---------------- Prize pot ---------------- */
+.pot { margin-bottom: clamp(20px, 3vw, 34px); }
+.pot__total {
+  font-family: "Saira Condensed", sans-serif;
+  color: var(--gold-bright);
+  letter-spacing: 0.02em;
+  margin-left: 8px;
+}
+.pot__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 10px;
+}
+.pot__item {
+  background: linear-gradient(180deg, var(--panel-2), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 13px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "amount label" "holder holder";
+  column-gap: 11px;
+  row-gap: 9px;
+  align-items: center;
+}
+.pot__item.is-held { border-color: rgba(236, 184, 74, 0.32); }
+.pot__amount {
+  grid-area: amount;
+  align-self: start;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  color: #1a1300;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+  padding: 4px 9px;
+  border-radius: 8px;
+  min-width: 46px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.pot__label {
+  grid-area: label;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--text);
+}
+.pot__holder {
+  grid-area: holder;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 9px;
+}
+.pot__winner { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+.pot__avatar { width: 30px; height: 30px; font-size: 11px; }
+.pot__winner-text { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.pot__owner { font-family: "Saira Condensed", sans-serif; font-weight: 700; font-size: 14px; }
+.pot__team { font-size: 11px; color: var(--muted); }
+.pot__tbd {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted-2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------------- Sweepstake Graveyard ---------------- */
+.graveyard { margin-top: 16px; border-top: 1px solid var(--line); }
+.graveyard__summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 12px 2px 4px;
+  user-select: none;
+}
+.graveyard__summary::-webkit-details-marker { display: none; }
+.graveyard__summary::before {
+  content: "▸";
+  color: var(--muted-2);
+  transition: transform 0.2s;
+}
+.graveyard[open] .graveyard__summary::before { transform: rotate(90deg); }
+.graveyard__count { color: var(--muted-2); font-weight: 600; letter-spacing: 0.02em; }
+.graveyard__grid { margin-top: 12px; }
+.graveyard__grid .person { opacity: 0.82; filter: grayscale(0.3); }
+
 /* ---------------- Bracket ---------------- */
 .bracket-wrap { position: relative; }
 .bracket-scroll {

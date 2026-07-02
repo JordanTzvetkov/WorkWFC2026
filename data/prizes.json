@@ -1,0 +1,26 @@
+{
+  "currency": "£",
+  "entry": 10,
+  "note": "Running prize pot. Winner/runner-up and the 'does best' tranche prizes update automatically from results; golden boot and disciplinary are set manually below once known.",
+  "prizes": [
+    { "key": "winner",      "label": "Overall World Cup Winner",         "amount": 85 },
+    { "key": "runnerup",    "label": "Runner-up",                        "amount": 30 },
+    { "key": "good_best",   "label": "Good team that does best",         "amount": 25 },
+    { "key": "avg_best",    "label": "Average team that does best",      "amount": 25 },
+    { "key": "weak_best",   "label": "Weak team that does best",         "amount": 25 },
+    { "key": "golden_boot", "label": "Team with the Golden Boot winner", "amount": 20 },
+    { "key": "discipline",  "label": "Worst disciplinary record",        "amount": 20 },
+    { "key": "worst_team",  "label": "Worst overall team (cash back)",   "amount": 10 }
+  ],
+  "tranches": {
+    "Great":   ["France", "Spain", "England", "Brazil", "Argentina", "Portugal", "Germany", "Netherlands", "Norway", "Belgium", "Colombia", "USA"],
+    "Good":    ["Japan", "Morocco", "Switzerland", "Uruguay", "Mexico", "Sweden", "Croatia", "Turkey", "Ivory Coast", "Ecuador", "Austria", "Senegal"],
+    "Average": ["Canada", "Paraguay", "Scotland", "Czech Republic", "Bosnia & Herz.", "Ghana", "South Korea", "Egypt", "Algeria", "Australia", "Iran", "Tunisia"],
+    "Weak":    ["South Africa", "DR Congo", "New Zealand", "Qatar", "Saudi Arabia", "Cape Verde", "Panama", "Iraq", "Uzbekistan", "Jordan", "Haiti", "Curaçao"]
+  },
+  "manual": {
+    "golden_boot_team": null,
+    "discipline_team": null,
+    "worst_team": "Iraq"
+  }
+}
