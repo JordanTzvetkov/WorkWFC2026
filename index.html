@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./styles.css?v=2" />
+  <link rel="stylesheet" href="./styles.css?v=3" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
@@ -25,11 +25,16 @@
         <span class="banner__title">Work Sweepstakes</span>
       </div>
 
-      <div class="headline" id="headline" aria-live="polite">
-        <p class="headline__primary" id="headline-primary">Loading the latest drama…</p>
-        <p class="headline__meta">
-          <span id="headline-updated" class="headline__updated"></span>
-        </p>
+      <div class="headline" id="headline">
+        <button type="button" class="headline__nav" id="headline-prev" aria-label="Previous headline">‹</button>
+        <div class="headline__viewport" aria-live="polite">
+          <p class="headline__primary" id="headline-primary">Loading the latest drama…</p>
+          <p class="headline__meta">
+            <span id="headline-updated" class="headline__updated"></span>
+            <span class="headline__dots" id="headline-dots" aria-hidden="true"></span>
+          </p>
+        </div>
+        <button type="button" class="headline__nav" id="headline-next" aria-label="Next headline">›</button>
       </div>
     </div>
   </header>
@@ -80,6 +85,6 @@
   </template>
 
   <!-- Bump ?v= whenever app.js or styles.css change, to defeat GitHub Pages caching. -->
-  <script src="./app.js?v=2" defer></script>
+  <script src="./app.js?v=3" defer></script>
 </body>
 </html>

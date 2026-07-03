@@ -625,20 +625,121 @@
     }
   }
 
-  /* ---------------- headline ---------------- */
+  /* ---------------- headline carousel ---------------- */
+  const HEADLINE_WINDOW_MS = 24 * 60 * 60 * 1000; // show the last 24h of headlines
+  const HEADLINE_ROTATE_MS = 6500;
+  let hlItems = [];
+  let hlIndex = 0;
+  let hlTimer = null;
+
+  // Newest-first list of headlines from the last 24h. During a lull (fewer than
+  // two in that window) we widen to the most recent handful so the carousel stays
+  // useful instead of showing a lone item.
+  const HEADLINE_MIN = 2;
+  const HEADLINE_FALLBACK = 5;
+  function collectHeadlines() {
+    const h = state.headline || {};
+    const all = [];
+    if (h.current) all.push(h.current);
+    if (Array.isArray(h.history)) all.push(...h.history);
+    const withEn = all
+      .filter((x) => x && x.en)
+      .sort((a, b) => Date.parse(b.generated_at) - Date.parse(a.generated_at));
+    const now = Date.now();
+    let items = withEn.filter((x) => now - Date.parse(x.generated_at) <= HEADLINE_WINDOW_MS);
+    if (items.length < HEADLINE_MIN) items = withEn.slice(0, HEADLINE_FALLBACK);
+    return items;
+  }
+
   function renderHeadline() {
-    const c = state.headline.current;
+    hlItems = collectHeadlines();
+    hlIndex = 0;
+    wireHeadlineControls();
+    showHeadline(0);
+    startHeadlineAuto();
+  }
+
+  function showHeadline(i) {
     const primaryEl = $("#headline-primary");
     const updatedEl = $("#headline-updated");
+    if (!primaryEl) return;
 
-    if (!c || !c.en) {
+    if (!hlItems.length) {
       primaryEl.textContent = "No results yet — first whistle awaits.";
       if (updatedEl) updatedEl.textContent = "";
+      renderHeadlineDots();
+      toggleHeadlineNav(false);
       return;
     }
 
-    primaryEl.innerHTML = highlightNames(c.en);
-    if (updatedEl) updatedEl.textContent = c.generated_at ? "Updated " + relTime(c.generated_at) : "";
+    hlIndex = ((i % hlItems.length) + hlItems.length) % hlItems.length;
+    const h = hlItems[hlIndex];
+    primaryEl.innerHTML = highlightNames(h.en);
+    // Re-trigger the fade-in.
+    primaryEl.classList.remove("hl-anim");
+    void primaryEl.offsetWidth;
+    primaryEl.classList.add("hl-anim");
+    if (updatedEl) updatedEl.textContent = h.generated_at ? "Updated " + relTime(h.generated_at) : "";
+    renderHeadlineDots();
+    toggleHeadlineNav(hlItems.length > 1);
+  }
+
+  function renderHeadlineDots() {
+    const dots = $("#headline-dots");
+    if (!dots) return;
+    dots.innerHTML = "";
+    if (hlItems.length <= 1) return;
+    hlItems.forEach((_, i) => {
+      dots.appendChild(el("span", "headline__dot" + (i === hlIndex ? " is-active" : "")));
+    });
+  }
+
+  function toggleHeadlineNav(show) {
+    ["#headline-prev", "#headline-next"].forEach((sel) => {
+      const b = $(sel);
+      if (b) b.style.visibility = show ? "" : "hidden";
+    });
+  }
+
+  function goHeadline(delta) {
+    showHeadline(hlIndex + delta);
+    restartHeadlineAuto();
+  }
+
+  function startHeadlineAuto() {
+    stopHeadlineAuto();
+    if (hlItems.length <= 1) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    hlTimer = setInterval(() => showHeadline(hlIndex + 1), HEADLINE_ROTATE_MS);
+  }
+  function stopHeadlineAuto() {
+    if (hlTimer) {
+      clearInterval(hlTimer);
+      hlTimer = null;
+    }
+  }
+  function restartHeadlineAuto() {
+    stopHeadlineAuto();
+    startHeadlineAuto();
+  }
+
+  function wireHeadlineControls() {
+    const prev = $("#headline-prev");
+    const next = $("#headline-next");
+    const wrap = $("#headline");
+    if (prev && !prev.dataset.wired) {
+      prev.dataset.wired = "1";
+      prev.addEventListener("click", () => goHeadline(-1));
+    }
+    if (next && !next.dataset.wired) {
+      next.dataset.wired = "1";
+      next.addEventListener("click", () => goHeadline(1));
+    }
+    if (wrap && !wrap.dataset.wired) {
+      wrap.dataset.wired = "1";
+      wrap.addEventListener("mouseenter", stopHeadlineAuto);
+      wrap.addEventListener("mouseleave", startHeadlineAuto);
+    }
   }
 
   function highlightNames(text) {
