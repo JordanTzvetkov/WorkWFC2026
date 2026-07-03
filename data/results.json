@@ -74,5 +74,26 @@
     "winner": "home",
     "pens": null,
     "final": true
+  },
+  "R32-11": {
+    "home": 3,
+    "away": 0,
+    "winner": "home",
+    "pens": null,
+    "final": true
+  },
+  "R32-13": {
+    "home": 2,
+    "away": 1,
+    "winner": "home",
+    "pens": null,
+    "final": true
+  },
+  "R32-12": {
+    "home": 2,
+    "away": 0,
+    "winner": "home",
+    "pens": null,
+    "final": true
   }
 }
