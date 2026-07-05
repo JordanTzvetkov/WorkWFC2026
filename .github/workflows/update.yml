@@ -28,5 +28,8 @@ jobs:
           git config user.name  "bracket-bot"
           git config user.email "bracket-bot@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet || git commit -m "chore: update results [skip ci]"
+          # No [skip ci]: this workflow triggers on schedule/dispatch only (never on
+          # push), so it can't loop — and [skip ci] would stop GitHub Pages from
+          # rebuilding, freezing the live site.
+          git diff --cached --quiet || git commit -m "chore: update results"
           git push

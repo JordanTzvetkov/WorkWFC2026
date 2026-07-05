@@ -156,8 +156,8 @@
     {
       "id": "R16-1",
       "round": "R16",
-      "kickoff_utc": "2026-07-04T21:00:00Z",
-      "venue": "Philadelphia",
+      "kickoff_utc": "2026-07-04T17:00:00Z",
+      "venue": "Houston",
       "source_home": "R32-1",
       "source_away": "R32-4",
       "feeds_into": "QF-1"
@@ -165,8 +165,8 @@
     {
       "id": "R16-2",
       "round": "R16",
-      "kickoff_utc": "2026-07-04T17:00:00Z",
-      "venue": "Houston",
+      "kickoff_utc": "2026-07-04T21:00:00Z",
+      "venue": "Philadelphia",
       "source_home": "R32-3",
       "source_away": "R32-6",
       "feeds_into": "QF-1"
@@ -174,8 +174,8 @@
     {
       "id": "R16-3",
       "round": "R16",
-      "kickoff_utc": "2026-07-06T00:00:00Z",
-      "venue": "Mexico City",
+      "kickoff_utc": "2026-07-05T20:00:00Z",
+      "venue": "East Rutherford",
       "source_home": "R32-2",
       "source_away": "R32-5",
       "feeds_into": "QF-3"
@@ -183,8 +183,8 @@
     {
       "id": "R16-4",
       "round": "R16",
-      "kickoff_utc": "2026-07-05T20:00:00Z",
-      "venue": "East Rutherford",
+      "kickoff_utc": "2026-07-06T00:00:00Z",
+      "venue": "Mexico City",
       "source_home": "R32-7",
       "source_away": "R32-8",
       "feeds_into": "QF-3"
@@ -192,7 +192,7 @@
     {
       "id": "R16-5",
       "round": "R16",
-      "kickoff_utc": "2026-07-06T21:00:00Z",
+      "kickoff_utc": "2026-07-07T00:00:00Z",
       "venue": "Seattle",
       "source_home": "R32-10",
       "source_away": "R32-9",
