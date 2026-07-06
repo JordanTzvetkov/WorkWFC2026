@@ -1,12 +1,19 @@
 {
   "current": {
-    "en": "John's Norway, powered by a Haaland brace, send Joe's Brazil packing — sorry Joe, the Vikings have spoken! 🪓⚽",
-    "generated_at": "2026-07-05T23:34:15.338Z",
+    "en": "Baz's brave Three Lions slay Ben's Azteca kings 3-2 in a World Cup classic — England are through, and the co-hosts are cooked! 🦁🌶️",
+    "generated_at": "2026-07-06T03:22:16.525Z",
     "covers": [
-      "R16-3"
+      "R16-4"
     ]
   },
   "history": [
+    {
+      "en": "John's Norway, powered by a Haaland brace, send Joe's Brazil packing — sorry Joe, the Vikings have spoken! 🪓⚽",
+      "generated_at": "2026-07-05T23:34:15.338Z",
+      "covers": [
+        "R16-3"
+      ]
+    },
     {
       "en": "Kate's Atlas Lions roar past Alex's co-hosts 3-0 — sorry, Alex, Morocco didn't get the maple syrup memo! 🦁🍁",
       "generated_at": "2026-07-05T02:55:16.974Z",
