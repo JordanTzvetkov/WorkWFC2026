@@ -1,15 +1,22 @@
 {
   "current": {
-    "en": "Tarang, Jordan, Baz and Beccy are ALL through — a clean sweep for the away teams as Kate, Ben B, John and Andy watch their sides pack their bags! 🎉",
-    "generated_at": "2026-07-14T09:56:26.234Z",
+    "en": "Jordan's Spain steamrolled Tarang's France 2-0 — no drama, no extra time, just a cold-blooded masterclass that sent La Roja straight to the World Cup final! 🔴🏆",
+    "generated_at": "2026-07-14T22:56:24.960Z",
     "covers": [
-      "QF-1",
-      "QF-2",
-      "QF-3",
-      "QF-4"
+      "SF-1"
     ]
   },
   "history": [
+    {
+      "en": "Tarang, Jordan, Baz and Beccy are ALL through — a clean sweep for the away teams as Kate, Ben B, John and Andy watch their sides pack their bags! 🎉",
+      "generated_at": "2026-07-14T09:56:26.234Z",
+      "covers": [
+        "QF-1",
+        "QF-2",
+        "QF-3",
+        "QF-4"
+      ]
+    },
     {
       "en": "Andy's Swiss neutrals are anything but neutral in Vancouver — they edge Jen's Colombia in a nervy shootout to march into the quarters! 🇨🇭🎉",
       "generated_at": "2026-07-07T23:56:15.467Z",
@@ -143,14 +150,6 @@
       "generated_at": "2026-07-01T02:59:03.941Z",
       "covers": [
         "R32-6"
-      ]
-    },
-    {
-      "en": "John's Norway snatch it late — a stoppage-time winner breaks Alex's Ivory Coast and roars into the last 16.",
-      "bg": "",
-      "generated_at": "2026-06-30T20:46:18.709Z",
-      "covers": [
-        "R32-5"
       ]
     }
   ]

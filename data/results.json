@@ -206,5 +206,12 @@
     "winner": "away",
     "pens": null,
     "final": true
+  },
+  "SF-1": {
+    "home": 0,
+    "away": 2,
+    "winner": "away",
+    "pens": null,
+    "final": true
   }
 }
