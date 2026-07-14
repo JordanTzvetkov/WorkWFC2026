@@ -1,12 +1,22 @@
 {
   "current": {
-    "en": "Andy's Swiss neutrals are anything but neutral in Vancouver — they edge Jen's Colombia in a nervy shootout to march into the quarters! 🇨🇭🎉",
-    "generated_at": "2026-07-07T23:56:15.467Z",
+    "en": "Tarang, Jordan, Baz and Beccy are ALL through — a clean sweep for the away teams as Kate, Ben B, John and Andy watch their sides pack their bags! 🎉",
+    "generated_at": "2026-07-14T09:56:26.234Z",
     "covers": [
-      "R16-7"
+      "QF-1",
+      "QF-2",
+      "QF-3",
+      "QF-4"
     ]
   },
   "history": [
+    {
+      "en": "Andy's Swiss neutrals are anything but neutral in Vancouver — they edge Jen's Colombia in a nervy shootout to march into the quarters! 🇨🇭🎉",
+      "generated_at": "2026-07-07T23:56:15.467Z",
+      "covers": [
+        "R16-7"
+      ]
+    },
     {
       "en": "Beccy's boys do the impossible — two goals down with 11 minutes to go, Argentina break Joe's Egyptian hearts with a 90th-minute winner to survive and advance! 🇦🇷💙",
       "generated_at": "2026-07-07T19:52:48.579Z",
@@ -141,17 +151,6 @@
       "generated_at": "2026-06-30T20:46:18.709Z",
       "covers": [
         "R32-5"
-      ]
-    },
-    {
-      "en": "Penalty heartbreak all round: Martin's Paraguay buried Evie's Germany and Kate's Morocco dumped out Laura's Netherlands, both from the spot. Earlier, Joe's Brazil edged Emmy's Japan and Alex's Canada saw off Isaac's South Africa.",
-      "bg": "",
-      "generated_at": "2026-06-30T03:30:00Z",
-      "covers": [
-        "R32-1",
-        "R32-2",
-        "R32-3",
-        "R32-4"
       ]
     }
   ]

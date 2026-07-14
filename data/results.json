@@ -178,5 +178,33 @@
       "away": 3
     },
     "final": true
+  },
+  "QF-1": {
+    "home": 0,
+    "away": 2,
+    "winner": "away",
+    "pens": null,
+    "final": true
+  },
+  "QF-2": {
+    "home": 1,
+    "away": 2,
+    "winner": "away",
+    "pens": null,
+    "final": true
+  },
+  "QF-3": {
+    "home": 1,
+    "away": 2,
+    "winner": "away",
+    "pens": null,
+    "final": true
+  },
+  "QF-4": {
+    "home": 1,
+    "away": 3,
+    "winner": "away",
+    "pens": null,
+    "final": true
   }
 }
