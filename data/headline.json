@@ -1,12 +1,19 @@
 {
   "current": {
-    "en": "Jordan's Spain steamrolled Tarang's France 2-0 — no drama, no extra time, just a cold-blooded masterclass that sent La Roja straight to the World Cup final! 🔴🏆",
-    "generated_at": "2026-07-14T22:56:24.960Z",
+    "en": "Beccy's Argentina break Baz's heart with two Messi-assisted sucker-punches in the dying minutes — sorry Baz, it's the World Cup final without you! 🩵🤍💙",
+    "generated_at": "2026-07-15T23:04:16.742Z",
     "covers": [
-      "SF-1"
+      "SF-2"
     ]
   },
   "history": [
+    {
+      "en": "Jordan's Spain steamrolled Tarang's France 2-0 — no drama, no extra time, just a cold-blooded masterclass that sent La Roja straight to the World Cup final! 🔴🏆",
+      "generated_at": "2026-07-14T22:56:24.960Z",
+      "covers": [
+        "SF-1"
+      ]
+    },
     {
       "en": "Tarang, Jordan, Baz and Beccy are ALL through — a clean sweep for the away teams as Kate, Ben B, John and Andy watch their sides pack their bags! 🎉",
       "generated_at": "2026-07-14T09:56:26.234Z",
@@ -142,14 +149,6 @@
       "generated_at": "2026-07-01T07:16:49.616Z",
       "covers": [
         "R32-7"
-      ]
-    },
-    {
-      "en": "Tarang's France steamrolled James's Sweden 3-0 — no drama, no way back for the Swedes.",
-      "bg": "",
-      "generated_at": "2026-07-01T02:59:03.941Z",
-      "covers": [
-        "R32-6"
       ]
     }
   ]
