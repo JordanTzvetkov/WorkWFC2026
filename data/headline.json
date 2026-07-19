@@ -1,12 +1,19 @@
 {
   "current": {
-    "en": "Beccy's Argentina break Baz's heart with two Messi-assisted sucker-punches in the dying minutes — sorry Baz, it's the World Cup final without you! 🩵🤍💙",
-    "generated_at": "2026-07-15T23:04:16.742Z",
+    "en": "Jordan's Spain reign supreme — Ferran Torres' extra-time stunner sends Beccy's Argentina home empty-handed and crowns La Roja world champions! 🏆🔴",
+    "generated_at": "2026-07-19T23:55:13.047Z",
     "covers": [
-      "SF-2"
+      "FINAL"
     ]
   },
   "history": [
+    {
+      "en": "Beccy's Argentina break Baz's heart with two Messi-assisted sucker-punches in the dying minutes — sorry Baz, it's the World Cup final without you! 🩵🤍💙",
+      "generated_at": "2026-07-15T23:04:16.742Z",
+      "covers": [
+        "SF-2"
+      ]
+    },
     {
       "en": "Jordan's Spain steamrolled Tarang's France 2-0 — no drama, no extra time, just a cold-blooded masterclass that sent La Roja straight to the World Cup final! 🔴🏆",
       "generated_at": "2026-07-14T22:56:24.960Z",
@@ -141,14 +148,6 @@
       "generated_at": "2026-07-01T19:17:34.673Z",
       "covers": [
         "R32-8"
-      ]
-    },
-    {
-      "en": "Ben WL's Mexico light up the Azteca — a clinical 2-0 dumps Chris's Ecuador out and books El Tri a place in the last 16.",
-      "bg": "",
-      "generated_at": "2026-07-01T07:16:49.616Z",
-      "covers": [
-        "R32-7"
       ]
     }
   ]
